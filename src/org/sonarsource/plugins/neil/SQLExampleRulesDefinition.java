@@ -40,7 +40,6 @@ public class SQLExampleRulesDefinition implements RulesDefinition {
 				.addDescriptionSection(createDescriptionSection(HOW_TO_FIX_SECTION_KEY, "Change the usage of your select to be SELECT", null))
 				.setTags("sql-plugin-example")
 				.setType(RuleType.CODE_SMELL)
-				.setType(RuleType.)
 				.setSeverity(Severity.INFO);
 		rule.setDebtRemediationFunction(rule.debtRemediationFunctions().linearWithOffset("5min","5min"));
 		
